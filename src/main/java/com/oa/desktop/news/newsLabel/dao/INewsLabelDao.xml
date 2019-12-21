@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper
+                PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oa.desktop.news.newsLabel.dao.INewsLabelDao">
+    <!--查询表的总个数-->
+    <select id="selectAllCount" resultType="int">
+       select count(*) from newlabel
+        <if test="serchid!=-1" >where id=#{serchid} or pid=#{serchid}</if>
+    </select>
+    <!--查询子类栏目的详细信息-->
+    <select id="selectNewsLabelChild" resultMap="newsLabelMap">
+       select id,label_name,label_content,pid from newlabel where id=#{pid}
+    </select>
+    <!--对结果集进行映射-->
+    <resultMap id="newsLabelMap" type="NewsLabel">
+        <id column="id" property="id" />
+        <result column="label_name"  property="name"/>
+        <result column="label_content"  property="content"/>
+        <association property="parent"
+                     javaType="NewsLabel"
+                     select="selectNewsLabelChild"
+                     column="pid"/>
+    </resultMap>
+    <select id="selectNewLabel" resultMap="newsLabelMap">
+        select id,label_name,label_content,pid from newlabel
+        <if test="serchid!=-1" >where id=#{serchid} or pid=#{serchid}</if>
+        limit #{page.pagesStartIndex},#{page.pageSize}
+    </select>
+    <!--插入新的数据-->
+    <insert id="addNewsLabel">
+       insert into newlabel (label_name,pid,label_content) values(#{textfield},#{select},#{textarea});
+    </insert>
+    <!--删除数据-->
+    <delete id="deleteNewLabel">
+        delete from newlabel where id=#{deleteid};
+    </delete>
+    <!--通过id查询单个数据-->
+    <select id="findNewsLabelById" resultType="NewsLabel">
+        select id id,label_name name,label_content content,pid parent from newlabel where id=#{id}
+    </select>
+    <!--对数据进行修改-->
+    <update id="updateNewsLabel">
+        update newlabel set label_name=#{textfield},label_content=#{textarea}, pid=#{select2}
+        where id=#{updatebyid}
+    </update>
+
+</mapper>
