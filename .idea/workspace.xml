@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec90b9ac-588b-4ec1-a665-7ffb3f9ebb3f" name="Default Changelist" comment="" />
+    <list default="true" id="ec90b9ac-588b-4ec1-a665-7ffb3f9ebb3f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +117,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -255,7 +257,7 @@
       <workItem from="1576893913922" duration="3652000" />
       <workItem from="1576908163502" duration="692000" />
       <workItem from="1576933895018" duration="7553000" />
-      <workItem from="1576981904415" duration="501000" />
+      <workItem from="1576981904415" duration="683000" />
     </task>
     <task id="LOCAL-00001" summary="oa test">
       <created>1576942281905</created>
@@ -285,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576982320609</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="oa test1">
+      <created>1576982475040</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576982475040</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +302,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="oa test" />
-    <option name="LAST_COMMIT_MESSAGE" value="oa test" />
+    <MESSAGE value="oa test1" />
+    <option name="LAST_COMMIT_MESSAGE" value="oa test1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="45" key="#HTTP_Proxy" timestamp="1576894268328">
@@ -336,10 +346,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1576661191994" />
-    <state x="218" y="0" key="CommitChangelistDialog2" timestamp="1576982317749">
+    <state x="218" y="0" key="CommitChangelistDialog2" timestamp="1576982473234">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="218" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1576982317749" />
+    <state x="218" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1576982473234" />
     <state x="363" y="174" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1576896034530">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -412,14 +422,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1366.738@0.0.1366.738" timestamp="1576897210811" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1576982093311">
+    <state x="184" y="0" key="SettingsEditor" timestamp="1576982604286">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1576982093311" />
-    <state x="275" y="90" key="Vcs.Push.Dialog.v2" timestamp="1576982405239">
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1576982604286" />
+    <state x="275" y="90" key="Vcs.Push.Dialog.v2" timestamp="1576982489355">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="90" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1576982405239" />
+    <state x="275" y="90" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1576982489355" />
     <state x="539" y="115" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1576895984935">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
